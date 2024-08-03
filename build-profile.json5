@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/liuyang/.ohos/config/default_HarmonyLearn_Wyiifyo3NABWSjGJjx0t8TpozIBquhH_ARwgE8jQRfI=.cer",
+          "storePassword": "000000198AF959FDC951E2B8495CC5C3307530D5D2CCDDFBD0ED34756AB0E5776873EDCD07B1812735",
+          "keyAlias": "debugKey",
+          "keyPassword": "00000019CAB8BA4CCE7519EFA5293B299071657FF9E1333F71A60C16A28AD5BFDEEDBE82E87C9FDC4A",
+          "profile": "/Users/liuyang/.ohos/config/default_HarmonyLearn_Wyiifyo3NABWSjGJjx0t8TpozIBquhH_ARwgE8jQRfI=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/liuyang/.ohos/config/default_HarmonyLearn_Wyiifyo3NABWSjGJjx0t8TpozIBquhH_ARwgE8jQRfI=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
