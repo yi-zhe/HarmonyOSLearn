@@ -1,19 +1,24 @@
+import { router } from '@kit.ArkUI';
+
 @Entry
 @Component
 struct Index {
   @State message: string = 'Hello World';
 
+  @State dir2: string = 'Hello World';
+
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('HelloWorld')
-        .fontSize(50)
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
+    Scroll() {
+      Column({ space: 10 }) {
+        Button('状态管理')
+          .width('100%')
+          .onClick(() => router.pushUrl({ url: 'pages/state/StateManagement' }))
+      }
+      .padding(10)
+      .width('100%')
+      .height('100%')
     }
+    .scrollBar(BarState.Off)
     .height('100%')
     .width('100%')
   }
