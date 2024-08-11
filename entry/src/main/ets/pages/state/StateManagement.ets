@@ -2,6 +2,8 @@ import Arrays from './components/Arrays'
 import BooleanStringNumber from './components/BooleanStringNumber'
 import ClassObject from './components/ClassObject'
 import Dates from './components/Dates'
+import Maps from './components/Maps'
+import Sets from './components/Sets'
 
 @Entry
 @Component
@@ -53,6 +55,8 @@ struct StateManagement {
       ClassObject()
       Arrays()
       Dates()
+      Maps()
+      Sets()
     }
     .divider({ strokeWidth: 2 })
     .scrollBar(BarState.Off)
