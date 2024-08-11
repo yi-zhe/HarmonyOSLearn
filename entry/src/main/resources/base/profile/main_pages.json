@@ -1,6 +1,7 @@
 {
   "src": [
     "pages/Index",
-    "pages/state/StateManagement"
+    "pages/state/StateManagement",
+    "pages/state/PropManagement"
   ]
 }

@@ -10,9 +10,12 @@ struct Index {
   build() {
     Scroll() {
       Column({ space: 10 }) {
-        Button('状态管理')
+        Button('State')
           .width('100%')
           .onClick(() => router.pushUrl({ url: 'pages/state/StateManagement' }))
+        Button('Prop')
+          .width('100%')
+          .onClick(() => router.pushUrl({ url: 'pages/state/PropManagement' }))
       }
       .padding(10)
       .width('100%')
