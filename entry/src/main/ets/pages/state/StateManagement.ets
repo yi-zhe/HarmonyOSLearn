@@ -1,3 +1,4 @@
+import Arrays from './components/Arrays'
 import BooleanStringNumber from './components/BooleanStringNumber'
 import ClassObject from './components/ClassObject'
 
@@ -49,6 +50,7 @@ struct StateManagement {
     List({ space: 2 }) {
       BooleanStringNumber()
       ClassObject()
+      Arrays()
     }
     .divider({ strokeWidth: 2 })
     .scrollBar(BarState.Off)
