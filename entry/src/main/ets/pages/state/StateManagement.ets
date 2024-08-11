@@ -1,3 +1,5 @@
+import BooleanStringNumber from './components/BooleanStringNumber'
+
 @Entry
 @Component
 struct StateManagement {
@@ -43,10 +45,11 @@ struct StateManagement {
   @State stateInComponent: string = ''
 
   build() {
-    Column() {
-
+    List() {
+      BooleanStringNumber()
     }
     .height('100%')
     .width('100%')
+    .padding(5)
   }
 }
