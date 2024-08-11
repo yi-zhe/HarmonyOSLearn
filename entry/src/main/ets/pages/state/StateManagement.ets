@@ -1,4 +1,5 @@
 import BooleanStringNumber from './components/BooleanStringNumber'
+import ClassObject from './components/ClassObject'
 
 @Entry
 @Component
@@ -45,9 +46,12 @@ struct StateManagement {
   @State stateInComponent: string = ''
 
   build() {
-    List() {
+    List({ space: 2 }) {
       BooleanStringNumber()
+      ClassObject()
     }
+    .divider({ strokeWidth: 2 })
+    .scrollBar(BarState.Off)
     .height('100%')
     .width('100%')
     .padding(5)

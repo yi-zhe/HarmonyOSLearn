@@ -11,29 +11,23 @@ export default struct BooleanStringNumber {
     ListItem() {
       Column() {
         Title({ title: '观察boolean、string、number类型' })
-        Row() {
-          Button('boolean')
-            .onClick(() => {
-              this.mixedVariable = true
-            })
-          Button('string')
-            .onClick(() => {
-              this.mixedVariable = 'This is a string'
-            })
-          Button('number')
-            .onClick(() => {
-              this.mixedVariable = 5
-            })
-        }
-        .width('100%')
-        .justifyContent(FlexAlign.SpaceEvenly)
+        Text('观察boolean')
+          .onClick(() => {
+            this.mixedVariable = true
+          })
+        Text('观察string')
+          .onClick(() => {
+            this.mixedVariable = 'This is a string'
+          })
+        Text('观察number')
+          .onClick(() => {
+            this.mixedVariable = 5
+          })
 
         Text(this.mixedVariable?.toString())
       }
+      .alignItems(HorizontalAlign.Start)
     }
-    .borderColor(Color.Gray)
-    .borderWidth(1)
-    .borderRadius(5)
     .padding(5)
   }
 }
