@@ -2,14 +2,17 @@ import { router } from '@kit.ArkUI';
 
 @Entry
 @Component
-struct Index {
+struct StateIndex {
 
   build() {
     Scroll() {
       Column({ space: 10 }) {
-        Button('状态管理v1')
+        Button('State')
           .width('100%')
-          .onClick(() => router.pushUrl({ url: 'pages/state/StateIndex' }))
+          .onClick(() => router.pushUrl({ url: 'pages/state/StateManagement' }))
+        Button('Prop')
+          .width('100%')
+          .onClick(() => router.pushUrl({ url: 'pages/state/PropManagement' }))
       }
       .padding(10)
       .width('100%')
