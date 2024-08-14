@@ -1,3 +1,4 @@
+import PropArrays from './components/PropArrays';
 import Props from './components/Props';
 import Title from './components/Title';
 
@@ -29,6 +30,7 @@ export default struct PropManagement {
   build() {
     List({ space: 2 }) {
       Props()
+      PropArrays()
     }
     .divider({ strokeWidth: 2 })
     .scrollBar(BarState.Off)
