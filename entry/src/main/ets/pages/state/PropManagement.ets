@@ -3,6 +3,7 @@ import PropArrays from './components/PropArrays';
 import Props from './components/Props';
 import PropForArrayOfSimpleDataType from './components/PropForArrayOfSimpleDataType';
 import PropForClassType from './components/PropForClassType';
+import PropForArrayType from './components/PropForArrayType';
 
 /**
  * 概述
@@ -36,6 +37,7 @@ export default struct PropManagement {
       PropForSimpleDataType()
       PropForArrayOfSimpleDataType()
       PropForClassType()
+      PropForArrayType()
     }
     .divider({ strokeWidth: 2 })
     .scrollBar(BarState.Off)
