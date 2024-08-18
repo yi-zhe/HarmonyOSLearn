@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/state/StateIndex",
     "pages/state/StateManagement",
-    "pages/state/PropManagement"
+    "pages/state/PropManagement",
+    "pages/state/LinkManagement"
   ]
 }

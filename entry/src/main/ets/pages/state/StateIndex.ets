@@ -13,6 +13,9 @@ struct StateIndex {
         Button('Prop')
           .width('100%')
           .onClick(() => router.pushUrl({ url: 'pages/state/PropManagement' }))
+        Button('Link')
+          .width('100%')
+          .onClick(() => router.pushUrl({ url: 'pages/state/LinkManagement' }))
       }
       .padding(10)
       .width('100%')
