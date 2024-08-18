@@ -5,6 +5,7 @@ import PropForArrayOfSimpleDataType from './components/PropForArrayOfSimpleDataT
 import PropForClassType from './components/PropForClassType';
 import PropForArrayType from './components/PropForArrayType';
 import LinkForSimpleDataTypeAndClass from './components/LinkForSimpleDataTypeAndClass';
+import LinkForArrayType from './components/LinkForArrayType';
 
 /**
  * 概述
@@ -33,6 +34,7 @@ export default struct LinkManagement {
   build() {
     List({ space: 2 }) {
       LinkForSimpleDataTypeAndClass()
+      LinkForArrayType()
     }
     .divider({ strokeWidth: 2 })
     .scrollBar(BarState.Off)
