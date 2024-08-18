@@ -6,6 +6,7 @@ import PropForClassType from './components/PropForClassType';
 import PropForArrayType from './components/PropForArrayType';
 import LinkForSimpleDataTypeAndClass from './components/LinkForSimpleDataTypeAndClass';
 import LinkForArrayType from './components/LinkForArrayType';
+import LinkForWatch from './components/LinkForWatch';
 
 /**
  * 概述
@@ -25,7 +26,7 @@ import LinkForArrayType from './components/LinkForArrayType';
  *    通过初始渲染的步骤可知，子组件@Link包装类把当前this指针注册给父组件。父组件@State变量变更后，会遍历更新所有依赖它的系统组件（elementid）和状态变量
  *    通知@Link包装类更新后，子组件中所有依赖@Link状态变量的系统组件（elementId）都会被通知更新。以此实现父组件对子组件的状态数据同步
  * 3. @Link的更新：当子组件中@Link更新后，处理步骤如下
- *    @Link更新后，调用父组件的@State包装类的set方法，将更新后的数值同步回父组件
+ * @Link更新后，调用父组件的@State包装类的set方法，将更新后的数值同步回父组件
  *    子组件@Link和父组件@State分别遍历依赖的系统组件，进行对应的UI的更新。以此实现子组件@Link同步回父组件@State *
  */
 @Entry
@@ -35,6 +36,7 @@ export default struct LinkManagement {
     List({ space: 2 }) {
       LinkForSimpleDataTypeAndClass()
       LinkForArrayType()
+      LinkForWatch()
     }
     .divider({ strokeWidth: 2 })
     .scrollBar(BarState.Off)
