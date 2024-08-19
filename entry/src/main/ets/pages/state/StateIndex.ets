@@ -16,6 +16,9 @@ struct StateIndex {
         Button('Link')
           .width('100%')
           .onClick(() => router.pushUrl({ url: 'pages/state/LinkManagement' }))
+        Button('Provide Consume')
+          .width('100%')
+          .onClick(() => router.pushUrl({ url: 'pages/state/ProvideConsumeManagement' }))
       }
       .padding(10)
       .width('100%')

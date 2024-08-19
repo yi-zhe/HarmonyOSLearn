@@ -4,6 +4,7 @@
     "pages/state/StateIndex",
     "pages/state/StateManagement",
     "pages/state/PropManagement",
-    "pages/state/LinkManagement"
+    "pages/state/LinkManagement",
+    "pages/state/ProvideConsumeManagement"
   ]
 }
