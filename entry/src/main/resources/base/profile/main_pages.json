@@ -5,6 +5,7 @@
     "pages/state/StateManagement",
     "pages/state/PropManagement",
     "pages/state/LinkManagement",
-    "pages/state/ProvideConsumeManagement"
+    "pages/state/ProvideConsumeManagement",
+    "pages/state/ObservedObjectLinkManagement"
   ]
 }
