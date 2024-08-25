@@ -2,17 +2,14 @@ import { router } from '@kit.ArkUI';
 
 @Entry
 @Component
-struct Index {
+struct BasicServiceIndex {
 
   build() {
     Scroll() {
       Column({ space: 10 }) {
-        Button('状态管理v1')
+        Button('Emitter')
           .width('100%')
-          .onClick(() => router.pushUrl({ url: 'pages/state/StateIndex' }))
-        Button('Basic Service Kit')
-          .width('100%')
-          .onClick(() => router.pushUrl({ url: 'pages/basic_service/BasicServiceIndex' }))
+          .onClick(() => router.pushUrl({ url: 'pages/basic_service/Emitter' }))
       }
       .padding(10)
       .width('100%')

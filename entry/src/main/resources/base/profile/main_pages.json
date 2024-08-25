@@ -6,6 +6,8 @@
     "pages/state/PropManagement",
     "pages/state/LinkManagement",
     "pages/state/ProvideConsumeManagement",
-    "pages/state/ObservedObjectLinkManagement"
+    "pages/state/ObservedObjectLinkManagement",
+    "pages/basic_service/BasicServiceIndex",
+    "pages/basic_service/Emitter"
   ]
 }
