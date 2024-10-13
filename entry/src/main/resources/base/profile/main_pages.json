@@ -8,6 +8,14 @@
     "pages/state/ProvideConsumeManagement",
     "pages/state/ObservedObjectLinkManagement",
     "pages/basic_service/BasicServiceIndex",
-    "pages/basic_service/Emitter"
+    "pages/basic_service/Emitter",
+    "pages/scan/pages/Index",
+    "pages/scan/pages/BarcodePage",
+    "pages/scan/pages/CustomPage",
+    "pages/scan/pages/CreateBarcode",
+    "pages/scan/pages/DetectBarcode",
+    "pages/scan/pages/ResultPage",
+    "pages/scan/pages/CustomResultPage",
+    "pages/scan/pages/ScanAccess"
   ]
 }

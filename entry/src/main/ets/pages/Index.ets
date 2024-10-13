@@ -13,6 +13,9 @@ struct Index {
         Button('Basic Service Kit')
           .width('100%')
           .onClick(() => router.pushUrl({ url: 'pages/basic_service/BasicServiceIndex' }))
+        Button('Scan Kit')
+          .width('100%')
+          .onClick(() => router.pushUrl({ url: 'pages/scan/pages/Index' }))
       }
       .padding(10)
       .width('100%')
