@@ -16,6 +16,7 @@
     "pages/scan/pages/DetectBarcode",
     "pages/scan/pages/ResultPage",
     "pages/scan/pages/CustomResultPage",
-    "pages/scan/pages/ScanAccess"
+    "pages/scan/pages/ScanAccess",
+    "pages/napi/Index"
   ]
 }

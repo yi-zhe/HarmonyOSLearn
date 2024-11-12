@@ -16,6 +16,9 @@ struct Index {
         Button('Scan Kit')
           .width('100%')
           .onClick(() => router.pushUrl({ url: 'pages/scan/pages/Index' }))
+        Button('NApi')
+          .width('100%')
+          .onClick(() => router.pushUrl({ url: 'pages/napi/Index' }))
       }
       .padding(10)
       .width('100%')
