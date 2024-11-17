@@ -6,3 +6,8 @@ export const modifyObject: (a: object) => object;
 export const asyncWork:(data:number)=>Promise<number>; //定义异步任务
 export const getLastErrorInfo: (str: string) => string;
 export const getSystemCap: (str: string) => string;
+
+
+export const createJsCore: (fun: Function) => number;
+export const evaluateJS: (jsvmId: number, code: string) => void;
+export const releaseJsCore: (jsvmId: number) => void;

@@ -15,6 +15,26 @@ interface Obj2 {
 }
 
 
+let jsCodeStr = `{
+let a = "hello World";
+consoleinfo(a);
+let b = add(99, 1);
+const mPromise = createPromise();
+mPromise.then((result) => {
+assertEqual(result, 0);
+onJSResultCallback(result, "abc", "v");
+});
+a;
+};`;
+
+function MyCallback(a: string, b: string): string {
+  console.log("TEST MyCallback run: " + a);
+  b = "callback done";
+  console.log("TEST MyCallback run: " + b);
+  return "callback pass";
+}
+
+
 @Entry
 @Component
 struct Index {
@@ -98,6 +118,14 @@ struct Index {
             } catch (error) {
               hilog.error(0x0000, 'testTag', 'Test Node-API napi_get_last_error_info error: %{public}s', error);
             }
+          })
+        Button("使用JSVM引擎")
+          .width('100%')
+          .onClick(() => {
+            const coreId: number = testNapi.createJsCore(MyCallback);
+            testNapi.evaluateJS(coreId, jsCodeStr);
+            testNapi.releaseJsCore(coreId);
+            hilog.info(0x0000, 'testTag', 'Test NAPI 2 + 3 = %{public}d', testNapi.add(2, 3));
           })
       }
       .padding(10)
